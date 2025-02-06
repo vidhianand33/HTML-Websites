@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Order</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Development" />
+    <meta name="keywords"    content="Assignment2_order" />
+    <meta name="author"      content="Vidhi Anand" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/order.js" defer></script>
+    <body>
+        <nav>
+            <ul> 
+                <li><a href="index.html" >About Us</a></li>
+                <li><a href="registration.html">Membership</a></li>
+                <li><a class="highlight" href="order.html">Order</a></li>
+                <li><a href="feature.html">Feature</a></li>
+		    </ul>	
+        </nav>
+    <section>
+      <form name="orderForm" onsubmit="return validateOrderForm()"  action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post">
+          <h2>Order </h2>
+          <div class="row">
+              <label> Delivery or Pick up</label>
+              <div class="form-inline">
+                  <label><input type="radio" name="mode" value="Delivery" onclick="show('delivery')" onchange="show('delivery')"> Delivery</label>
+                  <label><input type="radio" name="mode" value="Pickup" onclick="show('pickup')" onchange="show('pickup')"> Pick up </label>
+              </div>
+              <div class="error" id="modeErr"></div>
+          </div>
+          <br/>
+           <label for="quant"><b>Enter the Quantity of Ice Cream: </b></label>
+           <input type="number" placeholder="Enter the quantity" name="quant" id="quant" required>
+           <hr/>
+
+           <div class="row">
+            <label>Enter your Contact Number: </label>
+            <input type="text" name="mobile" maxlength="10">
+            <div class="error" id="mobileErr"></div>
+        </div>
+
+          <div class="row" id="address">
+              <label>Enter your Delivery Address: </label>
+              <input type="text" name="address" id="copyFromAddress">
+              <div class="error" id="addressErr"></div>
+          </div>
+          <div class="row" id="billingAddress">
+              <label>Enter your Billing Address: </label>
+              <div class="form-inline" id="sameParent">
+                  <label><input type="checkbox" id="same" onclick="copyAddress()" onchange="copyAddress()"> Same as Delivery Address</label>
+              </div>
+              <input type="text" name="billingAddress" id="copyhere">
+              <div class="error" id="billingAddressErr"></div>
+          </div>
+          
+          <div class="row">
+              <label>Email for receipt</label>
+              <input type="text" name="email">
+              <div class="error" id="emailErr"></div>
+          </div>
+          <div class="row">
+              <label>Payment </label>
+              <div class="form-inline">
+                  <label><input type="radio" name="pay" value="Online" onclick="payment('online')" onchange="payment('online')"> Online</label>
+                  <label><input type="radio" name="pay" value="Pickup" onclick="payment('pickup')" onchange="payment('pickup')"> Pickup</label>
+              </div>
+              <div class="error" id="payErr"></div>
+          </div>
+          <div class="row" id="card">
+              <label>Credit card details</label>
+              <select name="card">
+                  <option>Visa</option>
+                  <option>MasterCard</option>
+                  <option>American Express</option>
+              </select> 
+              <div class="error" id="cardErr"></div>
+          </div>
+          <div class="row" id="cardNumber">
+              <label>Enter your Card Number: </label>
+              <input type="number" name="cardNumberRef" id="secret">
+              <div class="error" id="cardNumberErr"></div>
+          </div>
+          
+          <div class="row">
+              <input type="submit" value="Submit">
+          </div>
+      </form>
+  </section>
+</body>
+</html>

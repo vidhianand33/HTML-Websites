@@ -1,0 +1,170 @@
+html {
+    font-size: 100%;
+}
+body {
+    background-color:rgb(16, 16, 17);
+} 
+nav {
+    float: left;
+    list-style-type: none;
+    padding:0px 0px;
+    margin:0px 0px;
+    width: 100%;
+}
+img{
+    text-align: left;
+    height:300px;
+    width:300px;       
+}
+#txt {
+    text-align: left;
+    padding-left:35%;		
+}
+li {
+    display: inline;
+    margin-left: 1rem;
+    color: #6ed7b1;
+}
+ul {
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    
+}  
+p {
+    color:rgb(223, 208, 248) ;
+    text-align:center;
+}
+a {
+    float:left;
+    width:8em;
+    text-decoration:none;
+    color:#FECA3B;
+    background-color:BLACK;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    padding-right:0.6em;
+    padding-left:0.6em;
+    text-align:center;
+    font-family:century gothic;
+    font-size:1.5em;
+}
+h1,h2 {
+    color:#C6BDBD;
+    text-align:left;
+    padding-top:2em;
+    font-size:40px;
+    color:rgb(233, 134, 134);	
+}	
+h3 {
+    font-size:25px;
+    color:rgb(233, 134, 134);	
+}	
+main{
+    color:#C6BDBD;
+      font-family:century gothic; 
+}	
+
+section{
+    color:#C6BDBD;	
+}
+aside{
+    float:right;
+    padding-top:2em;
+}
+hr{
+    color:rgb(247, 243, 243);
+    border-color:#000000;
+}
+form{
+   color:rgb(138, 239, 153);
+}
+@media screen and (max-width: 1090px){
+    a{     
+         font-size:1.2em;	
+    }
+}	
+input[type="submit"]:hover {
+	background: #e891ce;
+}
+label{
+    color: rgb(6, 110, 255);
+    display: block;
+}
+select{
+    display: inline-block;
+}
+#feature {
+    float: left;
+    width: 100%;
+    color:#2ec4a5;
+    text-align: left;
+}
+.fieldcontain {
+	color:rgb(223, 208, 248);
+}
+.controlgroup {
+    color:#e891ce;
+}
+.form-inline {
+	border: 1px solid #ccc;
+	padding: 8px 10px 4px;
+	border-radius: 2px;
+	color:#91e3d3;
+}
+.form-inline label, .form-inline input {
+	display: inline-block;
+	width: auto;
+	padding-right: 15px;
+}
+.row {
+	padding-bottom: 10px;
+	color:#57a2df;
+}
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+  input[type="submit"]:hover {
+    background: #0165b6;
+}
+  
+.highlight {
+	color: #281a1a;
+	background-color: #ebf0a0;  
+}
+#expiration-date{
+    display: inline-block;
+}
+#billingAddress{
+    display: inline-block;
+}
+
+
+/* style for the submit/register button */
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  a {
+    color: dodgerblue;
+  }
